@@ -1,0 +1,258 @@
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.links {
+    color: yellow;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+li {
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.red {
+    color: red;
+}
+
+li:hover {
+    color: red;
+}
+
+.order-now {
+    background-color: gray;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tab-content h1 {
+    font-size: calc(3rem + 2vw);
+    text-align: center;
+}
+
+.tab-content p {
+    font-weight: bolder;
+    font-size: calc(1rem + 0.7vw);
+    text-align: center;
+}
+
+#home {
+    height: 92vh;
+    background: url(./images/food.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home .hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#home h1 {
+    background-clip: text;
+}
+
+#home .hero p {
+    letter-spacing: 2px;
+}
+
+#home .hero .btn-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#home .hero .order-now {
+    padding: 8px 22px;
+    border-radius: 25px;
+    background: gray;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#home .hero .order-now:hover {
+    background: #ce103f;
+}
+
+#home .info {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(15rem + 25vw);
+    height: calc(15rem + 5vw);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#home .address,
+#home .hours,
+#home .phone {
+    font-size: 2rem;
+    display: flex;
+    padding: 3rem;
+}
+
+#home .address span,
+#home .hours span {
+    padding-right: 2rem;
+    font-size: calc(1rem + 0.5vw);
+}
+
+#home .address p,
+#home .hours p {
+    text-align: left;
+    font-size: calc(1rem + 0.5vw);
+}
+
+#home .hours span {
+    padding-right: 1rem;
+}
+
+#menu .hero {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu .hero h1 {
+    color: rgb(36, 36, 36);
+    position: relative;
+}
+
+#menu .hero h1::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    right: 10%;
+    width: 50%;
+    height: 2px;
+}
+
+#menu .menu-container {
+    width: 70%;
+    background: gray;
+    padding: calc(2rem + 2vw);
+    border-radius: 1.2rem;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#menu .menu-item {
+    flex-basis: 50rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu .menu-item img {
+    width: calc(5rem + 8vw);
+    height: calc(5rem + 8vw);
+}
+
+#menu .item-content {
+    padding: 0 1rem;
+}
+
+#menu .item-content h4 {
+    font-size: calc(1rem + 0.5vw);
+    font-weight: bolder;
+    border-bottom: 1px dashed #333;
+}
+
+#menu .item-content span {
+    font-size: calc(0.8rem + 0.5vw);
+    float: right;
+}
+
+#menu .item-content p {
+    font-size: calc(1rem + 0.5vw);
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+#contact .hero {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h1 {
+    font-size: calc(3rem + 1vw);
+    color: rgb(36, 36, 36);
+    position: relative;
+}
+
+#contact h1::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 25%;
+    width: 50%;
+    height: 2px;
+}
+
+#contact .info p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+#contact .info i {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+#contact .contact-container {
+    margin-top: 2rem;
+    background: gray;
+    width: 60%;
+    border-radius: 1.2rem;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+}
